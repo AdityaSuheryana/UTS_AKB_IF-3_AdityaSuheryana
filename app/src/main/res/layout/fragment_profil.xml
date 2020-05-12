@@ -91,14 +91,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Tempat Lahir : Majalengka
-\nTanggal Lahir : 07 November 1998
-\nZodiak             : Scorpio
-\nUniversitas     : UNIKOM
-\nJurusan          : Teknik Informatika
-\nSemester        : 6
+                android:text="Saya Tinggal di salah satu desa di
+\n kabupaten karawang . saya ingin
+\n memperdalam dunia teknologi
+\n untuk memajukan daerah
+\n desa saya tinggal. saya
+\n sedang mendalami tentang
+\n Front-end Web dan Android
 \n
-\n
+
 
 "
                 android:textColor="#000000"
