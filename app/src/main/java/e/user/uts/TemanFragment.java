@@ -110,6 +110,7 @@ public class TemanFragment extends Fragment {
                                 startActivity(intent);
                                 break;
                             case 1:
+                                Toast.makeText(getContext(), nama+" Berhasil di hapus ", Toast.LENGTH_SHORT).show();
                                 SQLite.delete(Integer.parseInt(idx));
                                 itemList.clear();
                                 getAllData();
