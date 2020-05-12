@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"
-            android:text="AKB-3"
+            android:text="AKB-3 / IF-3"
             android:textColor="#fff"
             android:textSize="18dp"
             android:textStyle="bold" />
@@ -82,7 +82,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="ABOUT ME"
+                android:text="Deskripsi Diri"
                 android:textColor="#000"
                 android:textSize="20dp"
                 android:textStyle="bold" />
