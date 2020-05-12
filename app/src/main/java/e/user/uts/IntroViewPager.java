@@ -63,9 +63,11 @@ public class IntroViewPager extends AppCompatActivity {
         //list
         final List<ScreenItem> mList = new ArrayList<>();
 
-        mList.add(new ScreenItem("Profil", "Menampilkan Biodata pribadi seperti foto, NIM, nama, kelas dan deskripsi diri ", R.drawable.my_bio));
-        mList.add(new ScreenItem("Kontak", "Menampilkan informasi kontak pribadi seperti telepon, email, dan sosial media pribadi", R.drawable.my_sosmed));
-        mList.add(new ScreenItem("Daftar Teman", "Berisi daftar teman yang disertakan informasi kontak.", R.drawable.contacs));
+        mList.add(new ScreenItem("Profil", "Menampilkan Biodata pribadi seperti foto, " +
+                "\nNIM, nama, kelas dan deskripsi diri pembuat", R.drawable.my_bio));
+        mList.add(new ScreenItem("Kontak", "Menampilkan Kontak dan sosial media pribadi", R.drawable.my_sosmed));
+        mList.add(new ScreenItem("Daftar Teman", "Berisi daftar teman yang disertakan informasi \nkontak dan dapat mengedit dan hapus kontak \nteman dengan di tekan yang lama pada " +
+                "\ndata kontak yang ingin di edit atau di hapus", R.drawable.contacs));
 
         //setup
         screenPager = findViewById(R.id.screen_viewpager);
@@ -122,9 +124,9 @@ public class IntroViewPager extends AppCompatActivity {
                 //Also we need the save a boolean value to storage so next time when the user run
                 //the app we could know that he is already checked the intro screen activity
                 //so use the shared preference to that proses
-                //BATASSS
+                
                 savePrefsData();
-                //BATASSS
+             
                 finish();
             }
         });
