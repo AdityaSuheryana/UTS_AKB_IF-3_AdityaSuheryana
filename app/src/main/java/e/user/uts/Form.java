@@ -49,9 +49,9 @@ public class Form extends AppCompatActivity {
 
 
         if (id == null || id == "") {
-            setTitle("Add Data");
+            setTitle("Tambah Data");
         } else {
-            setTitle("Edit Data");
+            setTitle("Ubah Data");
             txt_id.setText(id);
             txt_nim.setText(nim);
             txt_nama.setText(nama);
@@ -116,6 +116,8 @@ public class Form extends AppCompatActivity {
             SQLite.insert(txt_nim.getText().toString().trim(), txt_nama.getText().toString().trim(),
                     txt_kelas.getText().toString().trim(), txt_telp.getText().toString().trim(),
                     txt_email.getText().toString().trim(), txt_instagram.getText().toString().trim());
+                Toast.makeText(getApplicationContext(),
+                    "Data Berhasil di simpan", Toast.LENGTH_SHORT).show();
             blank();
             finish();
         }
@@ -126,11 +128,14 @@ public class Form extends AppCompatActivity {
         if (String.valueOf(txt_nim.getText()).equals(null) || String.valueOf(txt_nim.getText()).equals("") ||
                 String.valueOf(txt_nama.getText()).equals(null) || String.valueOf(txt_nama.getText()).equals("")) {
             Toast.makeText(getApplicationContext(),
-                    "Please input name or address ...", Toast.LENGTH_SHORT).show();
+                    "Silahakan masukan Nim dan Nama ...", Toast.LENGTH_SHORT).show();
         } else {
             SQLite.update(Integer.parseInt(txt_id.getText().toString().trim()), txt_nim.getText().toString().trim(),
                     txt_nama.getText().toString().trim(), txt_kelas.getText().toString().trim(), txt_telp.getText().toString().trim(),
                     txt_email.getText().toString().trim(), txt_instagram.getText().toString().trim());
+                Toast.makeText(getApplicationContext(),
+                    "Data Berhasil di ubah", Toast.LENGTH_SHORT).show();
+        
             blank();
             finish();
         }
